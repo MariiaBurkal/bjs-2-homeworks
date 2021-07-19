@@ -1,17 +1,7 @@
 function solveEquation(a, b, c) {
- 
-  'use strict';
-  let D = b ** 2 - 4 * a * c;
-  let arr = [];
-
-  if (D > 0) {
-    arr[0] = -b + Math.sqrt(D) / (2 * a);
-    arr[1] = -b - Math.sqrt(D) / (2 * a);
-  } else if (D === 0) {
-    arr[0] = -b + Math.sqrt(D) / (2 * a);
-  } 
-
-  return arr; 
+  let arr;
+  // код для задачи №1 писать здесь
+  return arr; // array
 }
 
 function calculateTotalMortgage(percent, contribution, amount, date) {
