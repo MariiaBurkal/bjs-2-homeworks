@@ -34,13 +34,13 @@ function worker(arr) {
 }
 
 function makeWork(arrOfArr, func) {
-  let max = -1000000000000;
-
-  for (let i = 0; i < arrOfArr.length; i++) {
-    let sumOfArrInside = func(arrOfArr[i]);
-
-    if (sumOfArrInside > max) {
-      max = sumOfArrInside;
+  
+  let max = func(arrOfArr[0]);
+    
+  for (i = 0; i < arrOfArr.length; i++) {
+    sum = func(arrOfArr[i]);       
+    if (sum > max) {
+    max = sum;
     }
   }
 
